@@ -76,7 +76,7 @@ nanorep.floatingWidget.on({
         color: #3c6b88;
     }
     </style>
-    <div class="container-fluid">
+<div class="container-fluid>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
     <img src="logo.png" width="30" height="30" alt="FJELLINJEN">
@@ -106,8 +106,8 @@ nanorep.floatingWidget.on({
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="display-4">Vipps, så ble betaling enkelt!</h1>
-        <p class="lead">Nå kan du betale fakturaene fra Fjellinjen med Vipps. </p>
+        <h1 class="display-4">This is a Dummy page for ELBIL</h1>
+        <p class="lead">Nothing here Works as it Should </p>
         <hr class="my-4">
         <p class="text">Nå kan du få fakturaen direkte i Vipps. Alt du trenger å gjøre er å si ja til å "motta faktura i Vipps" under innstillinger i Vipps-appen, så er du klar</p>
         <a class="btn btn-success btn-lg" href="#" role="button">LES MER</a>
@@ -190,13 +190,85 @@ nanorep.floatingWidget.on({
             </div>
         </div>
     </div>
-    </div>
+</div>
     <!-- Optional JavaScript -->
     <script type="text/javascript">
+    $('#confirmation-button').click(function() {
 
-    	var myarray = nanorep.floatingWidget.$refs.core.conversationSession.entries;
-        var chatHistory = (JSON.stringify(myarray)).replace(/([^a-z0-9 ]+)/gi, ' ')
-        
+
+        let firstName = $('#first-name').val();
+        let lastName = $('#last-name').val();
+        let emailAddress = $('#email').val();
+        let regNumber = $('#registration-number').val();
+
+
+        let chatConfig = {
+            "webchatAppUrl": "https://apps.mypurecloud.ie/webchat",
+            "webchatServiceUrl": "https://realtime.mypurecloud.ie:443",
+            "orgId": "8410",
+            "orgName": "fjellinjenas",
+            "queueName": "Chat",
+            "logLevel": "DEBUG",
+            "locale": "no",
+            "data": {
+                "firstName": firstName,
+                "lastName": lastName,
+                "customField1Label": "Epost",
+                "customField1": emailAddress,
+                "customField2Label": "Reg.nummer",
+                "customField2": regNumber,
+                "addressStreet": "",
+                "addressCity": "",
+                "addressPostalCode": "",
+                "addressState": "",
+                "phoneNumber": ""
+
+            },
+
+            "companyLogo": {
+                "width": 600,
+                "height": 149,
+                "url": "http://i65.tinypic.com/2hr1ytg.jpg"
+            },
+
+            "companyLogoSmall": {
+                "width": 25,
+                "height": 25,
+                "url": "http://i68.tinypic.com/2m3gto6.jpg"
+            },
+            "agentAvatar": {
+                "width": 462,
+                "height": 462,
+                "url": "http://i67.tinypic.com/1eqted.png"
+            },
+            "welcomeMessage": "Du snakker med kundebehandler.",
+            "cssClass": "webchat-frame",
+            "css": {
+                "width": "100%",
+                "height": "100%",
+                "display": "block",
+                "left": "90%",
+            }
+
+        };
+
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                console.error(err);
+                throw err;
+            }
+            webchat.renderPopup({
+                width: 400,
+                height: 400,
+                title: 'Chat'
+            });
+            $('#myModal').modal('toggle');
+
+            nanorep.floatingWidget.collapse();
+
+        });
+
+    });
     </script>
 </body>
 

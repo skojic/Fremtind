@@ -15,23 +15,18 @@
     <title>Fjellinjen</title>
 </head>
 <!-- nanorep floating widget -->
-<script>
-! function(t, e, o, c, n, a) {
-    var s = window.nanorep = window.nanorep || {};
-    s = s[e] = s[e] || {}, s.apiHost = a, s.host = n, s.path = c, s.account = t, s.protocol = "https:" === location.protocol ? "https:" : "http:", s.on = s.on || function() { s._calls = s._calls || [], s._calls.push([].slice.call(arguments)) };
-    var p = s.protocol + "//" + n + c + o + "?account=" + t,
-        l = document.createElement("script");
-    l.async = l.defer = !0, l.setAttribute("src", p), document.getElementsByTagName("head")[0].appendChild(l)
-}("fjellinjen", "floatingWidget", "floating-widget.js", "/web/", "fjellinjen.nanorep.co");
-</script>
+<script>!function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||{},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?"https:":"http:",s.on=s.on||function(){s._calls=s._calls||[],s._calls.push([].slice.call(arguments))};var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")[0].appendChild(l)}("fjellinjen","floatingWidget","floating-widget.js","/web/","fjellinjen.nanorep.co");</script>
+
 <script>
 nanorep.floatingWidget.on({
-    init: function() {
-        this.setConfigId('1137312722');
-    }
+	init: function() {
+		this.setKB('1137322402');
+		this.setConfigId('1137322932');
+	}
 });
 </script>
 <!-- //nanorep floating widget -->
+
 
 <body>
     <!-- Custom CSS -->
@@ -76,7 +71,7 @@ nanorep.floatingWidget.on({
         color: #3c6b88;
     }
     </style>
-    <div class="container-fluid">
+ <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
     <img src="logo.png" width="30" height="30" alt="FJELLINJEN">
@@ -106,8 +101,8 @@ nanorep.floatingWidget.on({
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="display-4">Vipps, så ble betaling enkelt!</h1>
-        <p class="lead">Nå kan du betale fakturaene fra Fjellinjen med Vipps. </p>
+        <h1 class="display-4">This is a Dummy page for AVTALE and  ENGLISH KB widget is on the it.</h1>
+        <p class="lead">Nothing here Works as it Should </p>
         <hr class="my-4">
         <p class="text">Nå kan du få fakturaen direkte i Vipps. Alt du trenger å gjøre er å si ja til å "motta faktura i Vipps" under innstillinger i Vipps-appen, så er du klar</p>
         <a class="btn btn-success btn-lg" href="#" role="button">LES MER</a>
@@ -151,52 +146,89 @@ nanorep.floatingWidget.on({
   </span>
     </nav>
     <div class="chat-container"></div>
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">FJELLINJEN AS</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h5>Vennligst fyll inn med dine informasjon</h5>
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Fornavn:</label>
-                            <input type="text" class="form-control" id="first-name" placeholder="Fornavnet ditt" name="First Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Etternavn:</label>
-                            <input type="text" class="form-control" id="last-name" placeholder="Ditt etternavn" name="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Epost:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Epost@eksempel.no" name="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Reg.nummer:</label>
-                            <input type="text" class="form-control" id="registration-number" placeholder="XY12345" name="Registration Number">
-                        </div>
-                    </form>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" id="confirmation-button">Send</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
-                </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
+</div>
     <!-- Optional JavaScript -->
     <script type="text/javascript">
+    $('#confirmation-button').click(function() {
 
-    	var myarray = nanorep.floatingWidget.$refs.core.conversationSession.entries;
-        var chatHistory = (JSON.stringify(myarray)).replace(/([^a-z0-9 ]+)/gi, ' ')
-        
+
+        let firstName = $('#first-name').val();
+        let lastName = $('#last-name').val();
+        let emailAddress = $('#email').val();
+        let regNumber = $('#registration-number').val();
+
+
+        let chatConfig = {
+            "webchatAppUrl": "https://apps.mypurecloud.ie/webchat",
+            "webchatServiceUrl": "https://realtime.mypurecloud.ie:443",
+            "orgId": "8410",
+            "orgName": "fjellinjenas",
+            "queueName": "Chat",
+            "logLevel": "DEBUG",
+            "locale": "no",
+            "data": {
+                "firstName": firstName,
+                "lastName": lastName,
+                "customField1Label": "Epost",
+                "customField1": emailAddress,
+                "customField2Label": "Reg.nummer",
+                "customField2": regNumber,
+                "addressStreet": "",
+                "addressCity": "",
+                "addressPostalCode": "",
+                "addressState": "",
+                "phoneNumber": ""
+
+            },
+
+            "companyLogo": {
+                "width": 600,
+                "height": 149,
+                "url": "http://i65.tinypic.com/2hr1ytg.jpg"
+            },
+
+            "companyLogoSmall": {
+                "width": 25,
+                "height": 25,
+                "url": "http://i68.tinypic.com/2m3gto6.jpg"
+            },
+            "agentAvatar": {
+                "width": 462,
+                "height": 462,
+                "url": "http://i67.tinypic.com/1eqted.png"
+            },
+            "welcomeMessage": "Du snakker med kundebehandler.",
+            "cssClass": "webchat-frame",
+            "css": {
+                "width": "100%",
+                "height": "100%",
+                "display": "block",
+                "left": "90%",
+            }
+
+        };
+
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                console.error(err);
+                throw err;
+            }
+            webchat.renderPopup({
+                width: 400,
+                height: 400,
+                title: 'Chat'
+            });
+            $('#myModal').modal('toggle');
+
+            nanorep.floatingWidget.collapse();
+
+        });
+
+    });
     </script>
 </body>
 
