@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+  <html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -38,8 +38,6 @@ nanorep.floatingWidget.on({
 });
 </script>
 <!-- //nanorep floating widget -->
-
-
 <body>
     <!-- Custom CSS -->
     <style type="text/css">
@@ -76,19 +74,19 @@ nanorep.floatingWidget.on({
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="avtale.html">English KB<span class="sr-only">(current)</span></a>
+                    <a class="navbar-brand" href="avtale.html">ENGLISH KB<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bombrikke</a>
+                    <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Priser</a>
+                    <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bompengekalkulator</a>
+                    <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="test.html">Test</a>
+                    <a class="nav-link" href="test.html"></a>
                 </li>
             </ul>
         </div>
@@ -97,7 +95,7 @@ nanorep.floatingWidget.on({
         <h1 class="display-4">Test page for English Floating Widget</h1>
         <p class="lead">Please ask questions in English</p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button">LES MER</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">SEE MORE</a>
     </div>
     <div class="card-deck">
         <div class="card">
@@ -137,91 +135,11 @@ nanorep.floatingWidget.on({
    Dette er bare en testside, og det er pågående arbeid !!!
   </span>
     </nav>
-    <div class="chat-container"></div>
             </div>
         </div>
     </div>
 </div>
 </div>
-    <!-- Optional JavaScript -->
-    <script type="text/javascript">
-    $('#confirmation-button').click(function() {
-
-
-        let firstName = $('#first-name').val();
-        let lastName = $('#last-name').val();
-        let emailAddress = $('#email').val();
-        let regNumber = $('#registration-number').val();
-
-
-        let chatConfig = {
-            "webchatAppUrl": "https://apps.mypurecloud.ie/webchat",
-            "webchatServiceUrl": "https://realtime.mypurecloud.ie:443",
-            "orgId": "8410",
-            "orgName": "fjellinjenas",
-            "queueName": "Chat",
-            "logLevel": "DEBUG",
-            "locale": "no",
-            "data": {
-                "firstName": firstName,
-                "lastName": lastName,
-                "customField1Label": "Epost",
-                "customField1": emailAddress,
-                "customField2Label": "Reg.nummer",
-                "customField2": regNumber,
-                "addressStreet": "",
-                "addressCity": "",
-                "addressPostalCode": "",
-                "addressState": "",
-                "phoneNumber": ""
-
-            },
-
-            "companyLogo": {
-                "width": 600,
-                "height": 149,
-                "url": "http://i65.tinypic.com/2hr1ytg.jpg"
-            },
-
-            "companyLogoSmall": {
-                "width": 25,
-                "height": 25,
-                "url": "http://i68.tinypic.com/2m3gto6.jpg"
-            },
-            "agentAvatar": {
-                "width": 462,
-                "height": 462,
-                "url": "http://i67.tinypic.com/1eqted.png"
-            },
-            "welcomeMessage": "Du snakker med kundebehandler.",
-            "cssClass": "webchat-frame",
-            "css": {
-                "width": "100%",
-                "height": "100%",
-                "display": "block",
-                "left": "90%",
-            }
-
-        };
-
-        ININ.webchat.create(chatConfig, function(err, webchat) {
-            if (err) {
-                console.error(err);
-                throw err;
-            }
-            webchat.renderPopup({
-                width: 400,
-                height: 400,
-                title: 'Chat'
-            });
-            $('#myModal').modal('toggle');
-
-            nanorep.floatingWidget.collapse();
-
-        });
-
-    });
-    </script>
 </body>
 
 </html>
