@@ -1,43 +1,48 @@
 ﻿<!doctype html>
-<html lang="en">
+  <html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://apps.mypurecloud.ie/webchat/jsapi-v1.js" type="text/javascript"></script>
+    <meta name="viewport" 
+      content="width=device-width, 
+        initial-scale=1, 
+          shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+          crossorigin="anonymous">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
+        crossorigin="anonymous"></script>
     <title>Fjellinjen</title>
 </head>
 <!-- nanorep floating widget -->
-<script>
-! function(t, e, o, c, n, a) {
-    var s = window.nanorep = window.nanorep || {};
-    s = s[e] = s[e] || {}, s.apiHost = a, s.host = n, s.path = c, s.account = t, s.protocol = "https:" === location.protocol ? "https:" : "http:", s.on = s.on || function() { s._calls = s._calls || [], s._calls.push([].slice.call(arguments)) };
-    var p = s.protocol + "//" + n + c + o + "?account=" + t,
-        l = document.createElement("script");
-    l.async = l.defer = !0, l.setAttribute("src", p), document.getElementsByTagName("head")[0].appendChild(l)
-}("fjellinjen", "floatingWidget", "floating-widget.js", "/web/", "fjellinjen.nanorep.co");
-</script>
+<script>!function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||{},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?"https:":"http:",s.on=s.on||function(){s._calls=s._calls||[],s._calls.push([].slice.call(arguments))};var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")[0].appendChild(l)}("fjellinjen","floatingWidget","floating-widget.js","/web/","fjellinjen.nanorep.co");</script>
+
 <script>
 nanorep.floatingWidget.on({
-    init: function() {
-        this.setConfigId('1137312722');
-    }
+  init: function() {
+    this.setConfigId('1139369582');
+    this.setKB('1139368922');
+  }
 });
 </script>
 <!-- //nanorep floating widget -->
 <body>
     <!-- Custom CSS -->
     <style type="text/css">
-
     .jumbotron {
-      background-color: #f5692b;
+      background-color: #0476b4;
     }
     .display-4 {
       font-weight: bold;
@@ -54,10 +59,10 @@ nanorep.floatingWidget.on({
     }
     .footer {
       font-weight: bold;
-      color: #3c6b88;
+      color: #ffffff;
     }
     </style>
-    <div class="container-fluid">
+ <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
     <img src="logo.png" width="30" height="30" alt="FJELLINJEN">
@@ -87,11 +92,10 @@ nanorep.floatingWidget.on({
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="display-4">Vipps, så ble betaling enkelt!</h1>
-        <p class="lead">Nå kan du betale fakturaene fra Fjellinjen med Vipps. </p>
+        <h1 class="display-4">Test page for Internal Floating Widget</h1>
+        <p class="lead">The database here is for testing (Internal) use.</p>
         <hr class="my-4">
-        <p class="text">Nå kan du få fakturaen direkte i Vipps. Alt du trenger å gjøre er å si ja til å "motta faktura i Vipps" under innstillinger i Vipps-appen, så er du klar</p>
-        <a class="btn btn-success btn-lg" href="#" role="button">LES MER</a>
+        <a class="btn btn-warning btn-lg" href="#" role="button">SEE MORE</a>
     </div>
     <div class="card-deck">
         <div class="card">
@@ -126,15 +130,16 @@ nanorep.floatingWidget.on({
         </div>
     </div>
     <div class="spacing"></div>
-    <nav class="navbar navbar-light" style="background-color: #f5692b;">
+    <nav class="navbar navbar-light" style="background-color: #0476b4;">
         <span class="footer">
    Dette er bare en testside, og det er pågående arbeid !!!
   </span>
     </nav>
-    <div class="chat-container"></div>
             </div>
         </div>
     </div>
-    </div>
+</div>
+</div>
 </body>
+
 </html>
