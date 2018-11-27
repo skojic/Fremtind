@@ -26,25 +26,11 @@
         crossorigin="anonymous"></script>
     <title>Fjellinjen</title>
 </head>
-<!-- nanorep embedded widget -->
-<div id="nanorep-embedded-widget"></div>
-<script>!function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||{},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?"https:":"http:",s.on=s.on||function(){s._calls=s._calls||[],s._calls.push([].slice.call(arguments))};var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")[0].appendChild(l)}("fjellinjen","embeddedWidget","embedded-widget.js","/web/","fjellinjen.nanorep.co");</script>
-
-<script>
-nanorep.embeddedWidget.on({
-	init: function() {
-		this.setConfigId('1213591882');
-		this.setKB('1213590942');
-	}
-});
-</script>
-<!-- //nanorep embedded widget -->
-
 <body>
     <!-- Custom CSS -->
     <style type="text/css">
     .jumbotron {
-      background-color: #0476b4;
+      background-color: darkmagenta;
     }
     .display-4 {
       font-weight: bold;
@@ -62,6 +48,11 @@ nanorep.embeddedWidget.on({
     .footer {
       font-weight: bold;
       color: #ffffff;
+    }
+    .embeded-widget {
+      width: 800px;
+      padding-bottom: 30px;
+      margin: 0 auto;
     }
     </style>
  <div class="container-fluid">
@@ -82,13 +73,7 @@ nanorep.embeddedWidget.on({
                     <a class="navbar-brand" href="internal.html">INTERNAL KB<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="test.html"></a>
+                    <a class="navbar-brand" href="support.html">SUPPORT KB<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -98,6 +83,23 @@ nanorep.embeddedWidget.on({
         <p class="lead">The database here is for testing (Internal) use.</p>
         <hr class="my-4">
         <a class="btn btn-warning btn-lg" href="#" role="button">SEE MORE</a>
+    </div>
+    <div class="container-fluid">
+        <div class="embeded-widget">
+            <!-- nanorep embedded widget -->
+            <div id="nanorep-embedded-widget"></div>
+            <script>!function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||{},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?"https:":"http:",s.on=s.on||function(){s._calls=s._calls||[],s._calls.push([].slice.call(arguments))};var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")[0].appendChild(l)}("fjellinjen","embeddedWidget","embedded-widget.js","/web/","fjellinjen.nanorep.co");</script>
+
+            <script>
+            nanorep.embeddedWidget.on({
+                init: function() {
+                    this.setConfigId('1213591882');
+                    this.setKB('1213590942');
+                }
+            });
+            </script>
+            <!-- //nanorep embedded widget -->
+        </div>
     </div>
     <div class="card-deck">
         <div class="card">
@@ -132,7 +134,7 @@ nanorep.embeddedWidget.on({
         </div>
     </div>
     <div class="spacing"></div>
-    <nav class="navbar navbar-light" style="background-color: #0476b4;">
+    <nav class="navbar navbar-light" style="background-color: darkmagenta;">
         <span class="footer">
    Dette er bare en testside, og det er pågående arbeid !!!
   </span>
