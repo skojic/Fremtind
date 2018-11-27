@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Customer information Page</title>
+<!-- nanorep floating widget -->
+<script>
+! function(t, e, o, c, n, a) {
+    var s = window.nanorep = window.nanorep || {};
+    s = s[e] = s[e] || {}, s.apiHost = a, s.host = n, s.path = c, s.account = t, s.protocol = "https:" === location.protocol ? "https:" : "http:", s.on = s.on || function() { s._calls = s._calls || [], s._calls.push([].slice.call(arguments)) };
+    var p = s.protocol + "//" + n + c + o + "?account=" + t,
+        l = document.createElement("script");
+    l.async = l.defer = !0, l.setAttribute("src", p), document.getElementsByTagName("head")[0].appendChild(l)
+}("fjellinjen", "floatingWidget", "floating-widget.js", "/web/", "fjellinjen.nanorep.co");
+</script>
+<script>
+nanorep.floatingWidget.on({
+    init: function() {
+        this.setConfigId('1137312722');
+    }
+});
+</script>
+<!-- //nanorep floating widget -->
+</head>
+<body>
+	<h2>Chat history from Bold 360 widget</h2>
+
+		<script type="text/javascript">
+			var chat = nanorep.floatingWidget.$refs.core.conversationSession.entries
+				var chatHistory = function() {
+					for (var i=2; i<chat.length; i++){
+						console.log(chat[i].text + ' ');
+							}
+								}
+									chatHistory();
+
+		</script>	
+</body>
+</html>

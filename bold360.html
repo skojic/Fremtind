@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Developing Bold 360 AI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Developing</span><span class="text-bold">Bold 360 AI</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Developing Bold 360 AI</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fas fa-robot"></i>Developing Bold 360 AI</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: June 25th, 2018</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">
+                                <h2 class="section-title">Knowledgebase Articles</h2>
+                                <div class="section-block">
+                                    <p>Bold 360 Artificial Inteligence, or as we like to call it "robot" is powered by large knowledgebase containing varius "Question - Answer" articles. There are three types of articles created, the ones with the straight answer, so called FAQ's, the ones with the branching options where user must provide some choice to get the final answer. The last type of article are the special one's. Those articles are not containing any relevant information for the customers. They provide code for the developers, for third party apps like Purecloud live agent chat to work with Bold 360 without problems.
+                                    </p>
+                                    <a href="https://fjellinjen.nanorep.co/console/login.html" class="btn btn-green" target="_blank"><i class="icon fas fa-microchip"></i> Bold 360 Console</a>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Floating Bold 360 widget code</h2>
+
+									<div class="code-block">
+                                        <pre><code class="language-javascript">
+<!-- nanorep floating widget -->
+&lt;script&gt;
+! function(t, e, o, c, n, a) {
+    var s = window.nanorep = window.nanorep || {};
+    s = s[e] = s[e] || {}, s.apiHost = a, s.host = n, s.path = c, s.account = t, s.protocol = "https:" === location.protocol ? "https:" : "http:", s.on = s.on || function() { s._calls = s._calls || [], s._calls.push([].slice.call(arguments)) };
+    var p = s.protocol + "//" + n + c + o + "?account=" + t,
+        l = document.createElement("script");
+    l.async = l.defer = !0, l.setAttribute("src", p), document.getElementsByTagName("head")[0].appendChild(l)
+}("fjellinjen", "floatingWidget", "floating-widget.js", "/web/", "fjellinjen.nanorep.co");
+&lt;&sol;script&gt;
+&lt;script&gt;
+nanorep.floatingWidget.on({
+    init: function() {
+        this.setConfigId('1137312722');
+    }
+});
+&lt;&sol;script&gt;
+<!-- //nanorep floating widget -->
+
+
+					</code></pre>
+                                    </div><!--//code-block-->
+                                        <p>In order for the AI widget to be displayed on the website, code above should be copied into the head of the every page on which we want floating widget to be shown.</p>
+
+
+                                <div id="html" class="section-block">
+                                    
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Useful Tip:</h4>
+                                            <p>Articles with "Do not touch these articles" label, are the ones containing Javascript for helping connect Bold 360 and Purecloud transition. Also there are number of customization options within Bold360 console.</p>
+                                        </div><!--//content-->
+                                
+                            </section><!--//doc-section-->
+                            
+                            </section><!--//doc-section-->
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed by Srdjan Kojic &#174;</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>                                                                
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
