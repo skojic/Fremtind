@@ -678,6 +678,13 @@ input:-webkit-autofill:focus {
 
 /*-- 18. Footer-Area --*/
 
+.fab {
+    color: #0069a3;
+}
+.fab:hover {
+    color: #00a9ff;
+}
+
 .footer-box {
     text-align: center;
 
