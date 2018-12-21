@@ -121,3 +121,36 @@ body {
 #list {
   padding: 40px;
 }
+
+/* CUSTOM CSS */
+
+    .jumbotron {
+      background-color: darkmagenta;
+    }
+    .display-4 {
+      font-weight: bold;
+      text-shadow: 1px 1px #fff;
+    }
+    .lead {
+      font-weight: bold;
+    }
+    .text {
+      font-weight: bold;
+    }
+    .spacing {
+      height: 10px;
+    }
+    .footer {
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .embeded-widget {
+      width: 600px;
+      padding-top: : 30px;
+      margin-top: 100px;
+      }
+
+    .embeded-internal-widget {
+    width: 600px;
+    padding-top: : 30px;
+    }
