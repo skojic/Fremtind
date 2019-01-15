@@ -1,0 +1,92 @@
+﻿<!doctype html>
+  <html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" 
+      content="width=device-width, 
+        initial-scale=1, 
+          shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+          crossorigin="anonymous">
+    <title>Fjellinjen</title>
+</head>
+<body>
+    <style>
+      body {
+        background-color: #56a8c5;
+      }
+      .embeded-internal-widget {
+        width: 800px;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+
+      .typewriter h1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px; 
+        color: #f5fcff;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        /* letter-spacing: .15em; */
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+      }
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: #56a8c5; }
+        }
+
+        .image {
+          text-align: center;
+          padding-top: 20px;
+        }
+        
+    </style>
+    <div class="container-fluid">
+      <div class="image"><img src="fj_logo.png" alt="Fjellinjen Logo"></div>
+      <div class="typewriter">
+        <h1>Kunderådgiver Brukerstøtte</h1>
+      </div>
+        <div class="embeded-internal-widget">
+            <!-- nanorep embedded widget -->
+            <div id="nanorep-embedded-widget"></div>
+              <script>
+              !function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||
+              {},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?
+              "https:":"http:",s.on=s.on||function(){s._calls=s._calls||
+              [],s._calls.push([].slice.call(arguments))};
+              var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");
+              l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")
+              [0].appendChild(l)}("fjellinjen","embeddedWidget","embedded-widget.js","/web/","fjellinjen.nanorep.co");
+              </script>
+              <script>
+              nanorep.embeddedWidget.on({
+                  init: function() {
+                      this.setConfigId('1213591882');
+                      this.setKB('1213590942');
+                  }
+              });
+              </script>
+            <!-- //nanorep embedded widget -->
+        </div>
+    </div>
+</body>
+
+</html>
