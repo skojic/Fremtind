@@ -44,12 +44,12 @@ header {
 		font-size: 15px;
 	}
 	.hero-text-box {
-		top: 30%;
+		top: 10%;
 		left: 0;
 		padding-left: 10%
 	}
 	.buttons {
-	height: 90px;
+	height: 80px;
 }
 	.phone-screenshot {
 		height: 450px;
@@ -82,13 +82,6 @@ footer {
 @media only screen and (max-width: 767px) {
 	header {
 	height: 50vh;
-}
-.hero-text-box {
-	position: absolute;
-	width: 100%;
-	top: 10%;
-	left: 0;
-	padding-left: 10%
 }
 
 h1 {
@@ -133,6 +126,12 @@ h2 {
 @media only screen and (max-width: 480px) {
 header {
 	height: 50vh;
+}
+.hero-text-box {
+	position: absolute;
+	width: 100%;
+	top: 15%;
+	left: 5%;
 }
 .phone-screenshot {
 	height: 170px;
