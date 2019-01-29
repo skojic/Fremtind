@@ -1,0 +1,124 @@
+/* -------------------------------------- */
+/* BIG SCREEN TABLETS FROM 1024px TO 1200px */
+/* -------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+	.hero-text-box {
+		width: 100%;
+}
+	.long-copy {
+		font-size: 110%;
+}
+	.phone-screenshot {
+		margin-left: 30%;
+	}
+}
+
+
+/* -------------------------------------- */
+/* TABLETS FROM 768px TO 1023px */
+/* -------------------------------------- */
+
+@media only screen and (max-width: 1023px) {
+	body {
+		font-size: 15px;
+	}
+	.hero-text-box {
+		top: 30%;
+		left: 10%;
+	}
+	.buttons {
+	height: 90px;
+}
+	.phone-screenshot {
+		height: 450px;
+		margin-left: 15%;
+	}
+	h2 {
+		font-size: 170%;
+		margin-top: 40%;
+		text-align: left;
+		padding-right: 40px;
+}
+	.long-copy {
+		font-size: 120%;
+		text-align: left;
+		margin-top: 30px;
+		padding-right: 40px;
+}
+footer {
+	text-align: center;
+}
+.footer-buttons {
+	height: 90px;
+}
+}
+
+/* -------------------------------------- */
+/* LARGER PHONES FROM 481px TO 767px */
+/* -------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+	header {
+	height: 50vh;
+}
+.hero-text-box {
+	position: absolute;
+	width: 100%;
+	top: 10%;
+	left: 0;
+	padding-left: 10%
+}
+
+h1 {
+	margin: 0 0;
+	font-size: 130%;
+}
+.buttons {
+	height: 60px;
+}
+.phone-screenshot {
+	height: 250px;
+	margin-left: 25%;
+}
+h2 {
+	margin-top: 20%;
+	font-size: 90%
+}
+.long-copy {
+	font-size: 85%;
+	text-align: left;
+	margin-top: 30px;
+}
+.footer-text {
+	font-size: 90%;
+}
+.footer-buttons {
+	height: 60px;
+}
+.footer-nav {
+	font-size: 85%;
+}
+.copyright {
+	font-size: 85%;
+}
+}
+
+
+/* -------------------------------------- */
+/* SMALL PHONES FROM 0px TO 480px */
+/* -------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+.phone-screenshot {
+	height: 170px;
+}
+h2 {
+	font-size: 70%
+}
+.long-copy {
+	font-size: 55%;
+	margin-top: 10px;
+}
+}
+
