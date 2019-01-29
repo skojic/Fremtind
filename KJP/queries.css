@@ -25,7 +25,8 @@
 	}
 	.hero-text-box {
 		top: 30%;
-		left: 10%;
+		left: 0;
+		padding-left: 10%
 	}
 	.buttons {
 	height: 90px;
@@ -75,7 +76,7 @@ h1 {
 	font-size: 130%;
 }
 .buttons {
-	height: 60px;
+	height: 50px;
 }
 .phone-screenshot {
 	height: 250px;
