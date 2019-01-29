@@ -6,11 +6,25 @@
 header {
 	height: 50vh;
 }
+h1 {
+	margin: 0 0;
+	font-size: 170%;
+}
+	.buttons {
+	height: 80px;
+}
 	.hero-text-box {
 		width: 100%;
+		top: 10%;
+		left: 0;
+		padding-left: 10%
+}
+h2 {
+		font-size: 150%;
+		padding-top: 10%
 }
 	.long-copy {
-		font-size: 110%;
+		font-size: 100%;
 }
 	.phone-screenshot {
 		margin-left: 30%;
