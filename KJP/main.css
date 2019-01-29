@@ -79,6 +79,28 @@ header {
 }
 
 /* -------------------------------------- */
+/* VIDEO STYLING */
+/* -------------------------------------- */
+iframe {
+	height: 315px;
+	width: 560px;
+	margin-top: 15%;
+	margin-right:30%;
+}
+
+.in-the-same-boat {
+	margin-top: 18%;
+	padding-left: 40%
+}
+
+.video-text {
+	font-size: 140%;
+	text-align: left;
+	margin-top: 30px;
+	padding-left: 40%
+}
+
+/* -------------------------------------- */
 /* FOOTER STYLING */
 /* -------------------------------------- */
 
@@ -104,12 +126,20 @@ header {
 	padding-top: 20px;
 }
 
+.footer-nav:hover {
+	color: #0097BB;
+}
+
 .social-icons {
 	padding: 20px;
 }
 
 .fab {
 	padding-right: 10px;
+	color: #fff;
+}
+.fab:hover {
+	color: #0097BB;
 }
 
 .copyright {
