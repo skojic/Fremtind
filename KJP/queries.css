@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Fakt Pro;
+  src: url(./fonts/FaktPro-Normal.woff);
+}
+
 /* -------------------------------------- */
 /* BIG SCREEN TABLETS FROM 1024px TO 1200px */
 /* -------------------------------------- */
@@ -8,14 +13,14 @@ header {
 }
 h1 {
 	margin: 0 0;
-	font-size: 170%;
+	font-size: 250%;
 }
 	.buttons {
-	height: 80px;
+	height: 100px;
 }
 	.hero-text-box {
 		width: 100%;
-		top: 10%;
+		top: 5%;
 		left: 0;
 		padding-left: 10%
 }
@@ -30,19 +35,15 @@ h2 {
 		margin-left: 30%;
 	}
 }
-iframe {
-	height: 214px;
-	width: 380px;
-	margin-top: 15%;
-}
+
 
 .in-the-same-boat {
-	margin-top: 18%;
+	margin-top: 25%;
 	padding-left: 20%
 }
 
 .video-text {
-	font-size: 100%;
+	font-size: 140%;
 	text-align: left;
 	margin-top: 30px;
 	padding-left: 20%
@@ -61,10 +62,14 @@ header {
 		font-size: 15px;
 	}
 	.hero-text-box {
-		top: 10%;
+		top: 5%;
 		left: 0;
 		padding-left: 10%
 	}
+	h1 {
+	margin: 0 0;
+	font-size: 300%;
+}
 	.buttons {
 	height: 80px;
 }
@@ -122,10 +127,15 @@ iframe {
 
 h1 {
 	margin: 0 0;
-	font-size: 130%;
+	font-size: 240%;
 }
+.hero-text-box {
+		top: 5%;
+		left: 0;
+		padding-left: 3%
+	}
 .buttons {
-	height: 50px;
+	height: 68px;
 }
 .phone-screenshot {
 	height: 250px;
@@ -133,10 +143,10 @@ h1 {
 }
 h2 {
 	margin-top: 20%;
-	font-size: 90%
+	font-size: 110%
 }
 .long-copy {
-	font-size: 85%;
+	font-size: 95%;
 	text-align: left;
 	margin-top: 30px;
 }
@@ -153,10 +163,10 @@ h2 {
 	font-size: 85%;
 }
 iframe {
-	height: 110px;
-	width: 200px;
+	height: 120px;
+	width: 220px;
 	margin-top: 35%;
-	margin-right:10%;
+	margin-right:5%;
 }
 
 .in-the-same-boat {
@@ -166,7 +176,7 @@ iframe {
 }
 
 .video-text {
-	font-size: 85%;
+	font-size: 95%;
 	text-align: left;
 	margin-top: 20px;
 	padding-left: 20%
@@ -182,12 +192,20 @@ iframe {
 header {
 	height: 50vh;
 }
+h1 {
+	margin: 0 0;
+	font-size: 220%;
+}
 .hero-text-box {
 	position: absolute;
 	width: 100%;
-	top: 15%;
+	top: 5%;
 	left: 0;
 	padding-left: 5%;
+}
+.buttons {
+	height: 55px;
+	padding-right: 0px;
 }
 .phone-screenshot {
 	height: 170px;
@@ -217,7 +235,7 @@ iframe {
 	text-align: left;
 	margin-top: 20px;
 	padding-left: 10%;
-	padding-right: 10%;
+	padding-right: 15%;
 }
 }
 
