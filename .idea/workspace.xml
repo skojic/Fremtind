@@ -20,18 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c74b989-f2e7-4ce4-8048-4e387cd2f98e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bold360.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/english.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fjellinjen_logo_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Passeringer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Vippsartikkel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/osloartikel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo_small.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605373501901</updated>
-      <workItem from="1605373503893" duration="8623000" />
+      <workItem from="1605373503893" duration="9006000" />
     </task>
     <servers />
   </component>
